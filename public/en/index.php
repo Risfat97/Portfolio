@@ -12,7 +12,7 @@
     <body>
         <main>
             <aside>
-                <img class="img-profil" src="./../../assets/images/tafsir.png" alt="Tafsir NDIOUR">
+                <img class="img-profil" src="assets/images/tafsir.png" alt="Tafsir NDIOUR">
                 <?php
                     foreach($asideLinks as $key => $value) {
                         echo link_with_icone($key, $value["href"], $value["class"], $value["icone"], 'h3');
@@ -41,7 +41,7 @@
                     </details>
                 </header>
                 <p class="who-is">
-                    Full Stack developer in apprenticeship at <a target="_blank" href="https://etienne-services.fr" rel="nofollow noopener noreferrer">ÉTIENNE SERVICES</a>, co-founder of <a target="_blank" href="https://jant.tech" rel="nofollow noopener noreferrer">Jant TECH</a>.
+                    Full Stack developer in apprenticeship at <a class="text-underline text-dark" target="_blank" href="https://etienne-services.fr" rel="nofollow noopener noreferrer">ETIENNE SERVICES</a>, co-founder of <a class="text-underline text-dark" target="_blank" href="https://jant.tech" rel="nofollow noopener noreferrer">Jant TECH</a>.
                 </p>
                 <hr>
                 <?= quote_view("Charles Aznavour", "I allways learn something. I never fell asleep a night in my life without learning something.") ?>

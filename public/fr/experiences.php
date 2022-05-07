@@ -3,6 +3,7 @@
     require_once __DIR__ . "/../../models/AppRepository.php";
 
     $asideLinks = AppRepository::$asideLinksFr;
+    $experiences = AppRepository::$experiencesFr;
 ?>
 
 <!DOCTYPE html>
@@ -11,7 +12,7 @@
     <body>
         <main>
             <aside>
-                <img class="img-profil" src="./../../assets/images/tafsir.png" alt="Tafsir NDIOUR">
+                <img class="img-profil" src="assets/images/tafsir.png" alt="Tafsir NDIOUR">
                 <?php
                     foreach($asideLinks as $key => $value) {
                         echo link_with_icone($key, $value["href"], $value["class"], $value["icone"], 'h3');
@@ -26,6 +27,11 @@
                         <option value="en">Anglais</option>
                     </select>
                 </div>
+                <?php
+                    foreach($experiences as $value){
+                        echo experience_view($value["title"], $value["logo"], $value["interval"], $value["tools"], "fr");
+                    }
+                ?>
             </section>
         </main>
         <script src="assets/js/app.js"></script>

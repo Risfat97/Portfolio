@@ -12,6 +12,15 @@ a {
     text-decoration: none;
 }
 
+a[target=_blank]::after {
+    content: "↗︎";
+    padding-left: 2px;
+}
+
+a[target=_blank]:hover{
+    color: #032388;
+}
+
 hr{
     width: 90%;
     margin-left: auto;
@@ -25,6 +34,7 @@ body{
     font-size: 1rem;
     font-family: 'Happy Monkey', monospace, sans-serif;
     background-color: var(--col-light);
+    color: var(--col-dark);
 }
 
 main{
@@ -35,7 +45,6 @@ main{
 
 main section{
     width: 100%;
-    padding: 1rem 2rem;
     position: relative;
 }
 
@@ -126,6 +135,22 @@ img.icone{
     color: #FFF;
 }
 
+aside a h3{
+    color: rgba(255, 255, 255, .5);
+}
+
+aside a img.icone{
+    opacity: .5;
+}
+
+a.active h3{
+    color: rgb(255, 255, 255);
+}
+
+a.active img.icone{
+    opacity: 1;
+}
+
 .strong{
     font-weight: bold;
     font-size: 1.3rem;
@@ -164,6 +189,80 @@ img.icone.quote{
     align-items: center;
 }
 
+article.exp-container:nth-of-type(1){
+    margin-top: 32px;
+}
+
+article.exp-container{
+    padding: 0;
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+}
+
+article.exp-container img.logo{
+    margin: 0;
+    padding: 4px;
+    position: relative;
+    width: 56px;
+    height: 56px;
+    border: none;
+    border-radius: 50%;
+    z-index: 1;
+    background-color: #fff;
+}
+
+article.exp-container::after{
+    position: absolute;
+    border: none;
+    top: 0;
+    left: 25px;
+    content: "";
+    height: 100%;
+    width: 2px;
+    background-color: rgba(108, 117, 125, .6);
+}
+
+article.exp-container .body{
+    background-color: #fff;
+    box-shadow: 1px 2px 3px rgba(0,0,0,.3);
+    border-radius: 15px;
+    padding: .8rem 1rem;
+    margin: .5rem 0 1rem 0;
+    margin-left: 8px;
+    width: 100%;
+}
+
+article.exp-container .body > p:nth-child(1){
+    margin-top: 0;
+}
+
+article.exp-container .body *{
+    margin: 0;
+}
+
+article.exp-container .body .exp-interval{
+    color: #032388;
+    margin: 8px 0 .5rem 0;
+}
+
+article.exp-container .body .exp-tools-header{
+    margin-bottom: 8px;
+}
+
+.text-gray{
+    color: var(--col-gray);
+}
+
+.text-dark{
+    color: var(--col-dark);
+}
+
+.text-underline{
+    text-decoration: underline;
+}
+
 @media (max-width: 600px){
     main{
         border-right: none;
@@ -186,17 +285,16 @@ img.icone.quote{
     aside > a{
         width: 25%;
         border: none;
-        border-right: 1px solid white;
-        color: white;
         background-color: var(--col-dark);
         padding: .5rem;
         display: flex;
         flex-direction: column;
         justify-content: center;
         text-decoration: none;
+        z-index: 5;
     }
 
-    a h3{
+    aside a h3{
         font-size: 10px;
         font-weight: normal;
         margin: 0;
@@ -208,6 +306,7 @@ img.icone.quote{
 
     main section{
         margin-bottom: 48px;
+        padding: 1rem 1rem;
     }
 }
 
@@ -216,6 +315,10 @@ img.icone.quote{
         border-right: 1px solid var(--col-dark);
         width: 90vw;
         position: relative;
+    }
+
+    main section{
+        padding: 1rem 2rem;
     }
 
     aside{

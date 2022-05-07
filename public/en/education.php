@@ -11,7 +11,7 @@
     <body>
         <main>
             <aside>
-                <img class="img-profil" src="./../../assets/images/tafsir.png" alt="Tafsir NDIOUR">
+                <img class="img-profil" src="assets/images/tafsir.png" alt="Tafsir NDIOUR">
                 <?php
                     foreach($asideLinks as $key => $value) {
                         echo link_with_icone($key, $value["href"], $value["class"], $value["icone"], 'h3');

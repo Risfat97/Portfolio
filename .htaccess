@@ -10,12 +10,17 @@ DefaultType application/x-httpd-php
 <IfModule mod_rewrite.c>
 	RewriteEngine On
 
+	# ASSETS
+	RewriteRule ^(.*)/assets/(css|js)/([a-z][-a-z0-9_]+).(css|js)$ 					/public/assets/$2/$3.$4 [L,QSA,NE,NC]
+	RewriteRule ^(.*)/assets/images/([a-z][-a-z0-9_]+).(svg|png|jpeg|jpg)$ 			/public/assets/images/$2.$3 [L,QSA,NE,NC]
+
+
 	# ROUTES	
-	RewriteRule ^(fr|en)$ 													/public/$1/index.php [L,QSA,NE,NC]
-	RewriteRule ^(fr|en)/(fr|en)$ 											/public/index.php [L,QSA,NE,NC]
-	RewriteRule ^(experiences|formations|competences)$ 						/public/fr/$1.php [L,QSA,NE,NC]
-	RewriteRule ^(experiences|formations|competences)/(fr|en)$ 				/public/index.php [L,QSA,NE,NC]
-	RewriteRule ^(experience|education|skills)$ 							/public/en/$1.php [L,QSA,NE,NC]
-	RewriteRule ^(experience|education|skills)/(fr|en)$ 					/public/index.php [L,QSA,NE,NC]
+	RewriteRule ^(fr|en)$ 															/public/$1/index.php [L,QSA,NE,NC]
+	RewriteRule ^(fr|en)/(fr|en)$ 													/public/index.php [L,QSA,NE,NC]
+	RewriteRule ^(experiences|formations|competences)$ 								/public/fr/$1.php [L,QSA,NE,NC]
+	RewriteRule ^(experiences|formations|competences)/(fr|en)$ 						/public/index.php [L,QSA,NE,NC]
+	RewriteRule ^(experience|education|skills)$ 									/public/en/$1.php [L,QSA,NE,NC]
+	RewriteRule ^(experience|education|skills)/(fr|en)$ 							/public/index.php [L,QSA,NE,NC]
 
 </IfModule>

@@ -21,7 +21,7 @@
             </aside>
             <section>
                 <div class="language-container">
-                    <img class="icone icone-langue" src="./../../assets/images/language.svg" alt="Icone">
+                    <img class="icone icone-langue" src="assets/images/language.svg" alt="Icone">
                     <select name="langue" id="langue">
                         <option value="fr" selected>Français</option>
                         <option value="en">Anglais</option>
@@ -41,7 +41,7 @@
                     </details>
                 </header>
                 <p class="who-is">
-                    Développeur full stack en apprentissage chez <a target="_blank" href="https://etienne-services.fr" rel="nofollow noopener noreferrer">ÉTIENNE SERVICES</a>, co-fondateur de <a target="_blank" href="https://jant.tech" rel="nofollow noopener noreferrer">Jant TECH</a>.
+                    Développeur full stack en apprentissage chez <a class="text-underline text-dark" target="_blank" href="https://etienne-services.fr" rel="nofollow noopener noreferrer">ÉTIENNE SERVICES</a>, co-fondateur de <a class="text-underline text-dark" target="_blank" href="https://jant.tech" rel="nofollow noopener noreferrer">Jant TECH</a>.
                 </p>
                 <hr>
                 <?= quote_view("Charles Aznavour", "J'apprends toujours quelque chose. Je ne me suis jamais endormi un soir de ma vie sans apprendre quelque chose.") ?>
