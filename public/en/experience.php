@@ -33,6 +33,9 @@
                         echo experience_view($value["title"], $value["logo"], $value["interval"], $value["tools"], "en");
                     }
                 ?>
+                <article class="exp-end">
+                    <p class="end"></p>
+                </article>
             </section>
         </main>
         <script src="assets/js/app.js"></script>
