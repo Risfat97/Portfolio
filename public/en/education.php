@@ -26,6 +26,7 @@
                         <option value="en" selected>English</option>
                     </select>
                 </div>
+                <p>This page is under building.</p>
             </section>
         </main>
         <script src="assets/js/app.js"></script>

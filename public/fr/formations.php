@@ -26,7 +26,7 @@
                         <option value="en">Anglais</option>
                     </select>
                 </div>
-                
+                <p>Cette page est en cours de construction.</p>
             </section>
         </main>
         <script src="assets/js/app.js"></script>

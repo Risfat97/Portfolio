@@ -15,6 +15,18 @@
         HTML;
     }
 
+    function footer(){
+        return <<<HTML
+            <div>
+                <p>
+                    <a href="http://jigsaw.w3.org/css-validator/check/referer">
+                        <img style="border:0;width:88px;height:31px" src="http://jigsaw.w3.org/css-validator/images/vcss-blue" alt="CSS Valide !"/>
+                    </a>
+                </p>
+            </div>
+        HTML;
+    }
+
     function link_with_icone($title, $href, $class, $iconeName, $hType) {
         $active = '';
         if(strcmp($_SERVER["REQUEST_URI"], $href) === 0){
@@ -31,7 +43,7 @@
     function contact_item($title, $href, $class, $icone){
         return <<<HTML
             <a href="$href"
-                    rel="nofollow noopener noreferrer"
+                    rel="nofollow noopener noreferrer" 
                     target="_blank"
                     class="$class text-underline text-dark">
                 <img class="icone icone-contact" src="assets/images/$icone.svg" alt="Icone">
@@ -53,14 +65,14 @@
     }
 
     function experience_view($title, $logo, $interval, $tools, $lang){
-        $headerTools = '<p class="exp-tools-header text-gray">Frameworks / Langages de programmation</p>';
+        $headerTools = 'Frameworks / Langages de programmation';
         if(strcmp($lang, "en") === 0){
-            $headerTools = '<p class="exp-tools-header text-gray">Frameworks / Programming Languages</p>';
+            $headerTools = 'Frameworks / Programming Languages';
         }
         $nbTools = count($tools);
         $listTools = '';
         if($nbTools > 0){
-            $listTools = '<p>' . 
+            $listTools = '<p class="exp-tools-header text-gray">' . 
                             $headerTools . 
                         '</p>' . 
                         '<ul>';
@@ -71,10 +83,10 @@
         }
         return <<<HTML
             <article class="exp-container">
-                <img class="logo" src="$logo">
+                <img class="logo" src="$logo" alt="Logo">
                 <div class="body">
-                    <p class="exp-title">$title</p>
-                    <p class="exp-interval text-gray">$interval</p>
+                    <h4 class="exp-title">$title</h4>
+                    <h4 class="exp-interval text-gray">$interval</h4>
                     $listTools
                 </div>
             </article>

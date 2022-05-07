@@ -20,6 +20,7 @@
                 ?>
             </aside>
             <section>
+                <h2 hidden>Expériences</h2>
                 <div class="language-container">
                     <img class="icone icone-langue" src="assets/images/language.svg" alt="Icone">
                     <select name="langue" id="langue">
@@ -32,9 +33,9 @@
                         echo experience_view($value["title"], $value["logo"], $value["interval"], $value["tools"], "fr");
                     }
                 ?>
-                <article class="exp-end">
-                    <p class="end"></p>
-                </article>
+                <div class="exp-end">
+                    <div class="end"></div>
+                </div>
             </section>
         </main>
         <script src="assets/js/app.js"></script>

@@ -225,14 +225,14 @@ article.exp-container::after{
     background-color: rgba(108, 117, 125, .6);
 }
 
-article.exp-end{
+div.exp-end{
     margin: 0;
     padding: 0;
     position: relative;
     width: 100%;
 }
 
-article.exp-end .end{
+div.exp-end .end{
     position: absolute;
     top: -16px;
     left: 22px;

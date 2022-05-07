@@ -94,7 +94,7 @@
 
         public static $experiencesFr = [
             [
-                "title" => "Développeur d'applications web et mobiles chez <a class=\"text-underline text-dark\"target=\"_blank\" href=\"https://etienne-services.fr\" rel=\"nofollow noopener noreferrer\">ÉTIENNE SERVICES</a>.",
+                "title" => "Développeur d'applications web et mobiles chez <a class=\"text-underline text-dark\" target=\"_blank\" href=\"https://etienne-services.fr\" rel=\"nofollow noopener noreferrer\">ÉTIENNE SERVICES</a>.",
                 "logo" => "assets/images/etienne-services.jpeg",
                 "interval" => "Septembre 2021 - Aujourd'hui",
                 "tools" => [
@@ -106,7 +106,7 @@
                 ]
             ],
             [
-                "title" => "Co-fondateur de <a class=\"text-underline text-dark\"target=\"_blank\" href=\"https://jant.tech\" rel=\"nofollow noopener noreferrer\">Jant TECH</a> et développeur front-end/back-end.",
+                "title" => "Co-fondateur de <a class=\"text-underline text-dark\" target=\"_blank\" href=\"https://jant.tech\" rel=\"nofollow noopener noreferrer\">Jant TECH</a> et développeur front-end/back-end.",
                 "logo" => "assets/images/jant-tech.png",
                 "interval" => "Juillet 2020 - Aujourd'hui",
                 "tools" => [
@@ -118,7 +118,7 @@
                 ]
             ],
             [
-                "title" => "Tuteur en langage C à l' <a class=\"text-underline text-dark\"target=\"_blank\" href=\"https://galilee.univ-paris13.fr/\" rel=\"nofollow noopener noreferrer\">Institut Galilée - Université Sorbonne Paris Nord</a>.",
+                "title" => "Tuteur en langage C à l' <a class=\"text-underline text-dark\" target=\"_blank\" href=\"https://galilee.univ-paris13.fr/\" rel=\"nofollow noopener noreferrer\">Institut Galilée - Université Sorbonne Paris Nord</a>.",
                 "logo" => "assets/images/logo_institut_galilee.jpeg",
                 "interval" => "Novembre 2020 - Juillet 2021",
                 "tools" => []
@@ -127,7 +127,7 @@
 
         public static $experiencesEn = [
             [
-                "title" => "Web and mobile developer at <a class=\"text-underline text-dark\"target=\"_blank\" href=\"https://etienne-services.fr\" rel=\"nofollow noopener noreferrer\">ETIENNE SERVICES</a>.",
+                "title" => "Web and mobile developer at <a class=\"text-underline text-dark\" target=\"_blank\" href=\"https://etienne-services.fr\" rel=\"nofollow noopener noreferrer\">ETIENNE SERVICES</a>.",
                 "logo" => "assets/images/etienne-services.jpeg",
                 "interval" => "September 2021 - Present",
                 "tools" => [
@@ -139,7 +139,7 @@
                 ]
             ],
             [
-                "title" => "Co-founder of <a class=\"text-underline text-dark\"target=\"_blank\" href=\"https://jant.tech\" rel=\"nofollow noopener noreferrer\">Jant TECH</a> and front-end/back-end developer.",
+                "title" => "Co-founder of <a class=\"text-underline text-dark\" target=\"_blank\" href=\"https://jant.tech\" rel=\"nofollow noopener noreferrer\">Jant TECH</a> and front-end/back-end developer.",
                 "logo" => "assets/images/jant-tech.png",
                 "interval" => "July 2020 - Present",
                 "tools" => [
@@ -151,7 +151,7 @@
                 ]
             ],
             [
-                "title" => "Tutor of C programming language at <a class=\"text-underline text-dark\"target=\"_blank\" href=\"https://galilee.univ-paris13.fr/\" rel=\"nofollow noopener noreferrer\">Institut Galilée - Université Sorbonne Paris Nord</a>.",
+                "title" => "Tutor of C programming language at <a class=\"text-underline text-dark\" target=\"_blank\" href=\"https://galilee.univ-paris13.fr/\" rel=\"nofollow noopener noreferrer\">Institut Galilée - Université Sorbonne Paris Nord</a>.",
                 "logo" => "assets/images/logo_institut_galilee.jpeg",
                 "interval" => "November 2020 - July 2021",
                 "tools" => []
