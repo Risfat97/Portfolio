@@ -8,12 +8,22 @@
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr"
+    xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:foaf="http://xmlns.com/foaf/0.1/" 
+    xmlns:schm="http://schema.org/">
     <?= head_view("experience") ?>
     <body>
-        <main>
+        <main about="#tafsir" typeof="foaf:Person">
             <aside>
-                <img class="img-profil" src="assets/images/tafsir.png" alt="Tafsir NDIOUR">
+                <img class="img-profil" src="assets/images/tafsir.png" alt="Tafsir NDIOUR" property="foaf:Image">
+                <span property="foaf:depicts" 
+                    rdf:resource="assets/images/tafsir.png"
+                    hidden>Tafsir Mbodj NDIOUR</span>
                 <?php
                     foreach($asideLinks as $key => $value) {
                         echo link_with_icone($key, $value["href"], $value["class"], $value["icone"], 'h3');
@@ -24,7 +34,7 @@
                 <h2 hidden>Expériences</h2>
                 <div class="language-container">
                     <img class="icone icone-langue" src="assets/images/language.svg" alt="Icone">
-                    <select name="langue" id="langue">
+                    <select name="langue" id="langue" property="schm:knowsLanguage">
                         <option value="fr">French</option>
                         <option value="en" selected>English</option>
                     </select>

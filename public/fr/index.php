@@ -7,12 +7,20 @@
 ?>
 
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" dir="ltr"
+    xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:foaf="http://xmlns.com/foaf/0.1/" 
+    xmlns:schm="http://schema.org/">
     <?= head_view("résumé") ?>
     <body>
-        <main>
+        <main about="#tafsir" typeof="foaf:Person">
             <aside>
-                <img class="img-profil" src="assets/images/tafsir.png" alt="Tafsir NDIOUR">
+                <img
+                    class="img-profil" src="assets/images/tafsir.png" alt="Tafsir NDIOUR" property="foaf:Image">
                 <?php
                     foreach($asideLinks as $key => $value) {
                         echo link_with_icone($key, $value["href"], $value["class"], $value["icone"], 'h3');
@@ -22,49 +30,71 @@
             <section>
                 <div class="language-container">
                     <img class="icone icone-langue" src="assets/images/language.svg" alt="Icone">
-                    <select name="langue" id="langue">
+                    <select name="langue" id="langue" property="schm:knowsLanguage">
                         <option value="fr" selected>Français</option>
                         <option value="en">Anglais</option>
                     </select>
                 </div>
                 <header class="author-container">
-                    <h1 class="author">Tafsir Mbodj NDIOUR</h1>
+                    <h1 class="author" 
+                        property="foaf:depicts" 
+                        rdf:resource="assets/images/tafsir.png">
+                        <span property="foaf:firstName">Tafsir Mbodj</span> <span property="foaf:familyName">NDIOUR</span></h1>
                     <details class="contact-details">
                         <summary>Infos contact</summary>
                         <p>
                         <?php
                             foreach($contactItems as $key => $value) {
-                                echo contact_item($key, $value["href"], $value["class"], $value["icone"]);
+                                echo contact_item($key, $value["href"], $value["class"], $value["icone"], $value["property"], $value["value"]);
                             }
                         ?>
+                            <a class="d-flex align-items-center item-contact text-dark">
+                                <img class="icone icone-location" src="assets/images/pin_drop.svg" alt="Icone">
+                                <span class="text-dark" 
+                                    property="schm:homeLocation">Paris 75014</span>
+                            </a>
                         </p>
                     </details>
                 </header>
                 <p class="who-is">
-                    Développeur full stack en apprentissage chez <a class="text-underline text-dark" target="_blank" href="https://etienne-services.fr" rel="nofollow noopener noreferrer">ÉTIENNE SERVICES</a>, co-fondateur de <a class="text-underline text-dark" target="_blank" href="https://jant.tech" rel="nofollow noopener noreferrer">Jant TECH</a>.
+                    <span property="schm:jobTitle">Développeur full stack</span> en apprentissage chez 
+                    <a class="text-underline text-dark" 
+                        target="_blank" 
+                        href="https://etienne-services.fr" 
+                        rel="nofollow noopener noreferrer" 
+                        property="foaf:workplaceHomepage" 
+                        rdf:resource="https://etienne-services.fr">ÉTIENNE SERVICES</a>, 
+                    co-fondateur de 
+                    <a class="text-underline text-dark" 
+                        target="_blank" 
+                        href="https://jant.tech" 
+                        rel="nofollow noopener noreferrer"
+                        property="schm:memberOf">Jant TECH</a>.
                 </p>
                 <hr>
                 <?= quote_view("Charles Aznavour", "J'apprends toujours quelque chose. Je ne me suis jamais endormi un soir de ma vie sans apprendre quelque chose.") ?>
-                <p class="about-me part-1">
-                    <span class="just-T">T</span><span class="strong just-afsir">afsir</span> est un développeur passionné qui aime partager, 
-                    travailler en équipe tout en sachant évoluer de manière autonome. <br>
-                    J'ai commencé le développement avec le langage C avec comme petit projet en classe (un agenda avec interface graphique et une base 
-                    de données), ensuite c'est devenu très vite une vraie passion. J'adore apprendre un nouveau langage de programmation ou explorer un 
-                    nouveau framework avec mes projets personnels, cela me permet de découvrir de nouveaux concepts ou de nouvelles manières de coder.
-                    <br>
-                    Je développe:
-                </p>
-                <ul class="ul-about-me">
-                    <li>des sites web ou appications web</li>
-                    <li>des appications mobiles</li>
-                    <li>des progiciels (logiciel pour pc)</li>
-                </ul>
-                <p class="about-me part-2">
-                    Je travaille de manière organisé, rigoureux dans les tâches professionnelles tout en tenant compte d'éventuelles 
-                    évolutions dans le futur afin de prendre de l'avance.
-                    Quelque soit le projet à réaliser, aussi gros soit-il, aussi proche soit le deadline, je me donne les moyens d’atteindre 
-                    mes objectifs tout en délivrant un travail de qualité le tout dans les bonnes pratiques de sécurité.
-                </p>
+                <div property="dc:description">
+                    <p class="about-me part-1">
+                        <span class="just-T">T</span><span class="strong just-afsir">afsir</span> est un développeur passionné qui aime partager, 
+                        travailler en équipe tout en sachant évoluer de manière autonome. <br>
+                        J'ai commencé le développement avec le langage C avec comme petit projet en classe (un agenda avec interface graphique et une base 
+                        de données), ensuite c'est devenu très vite une vraie passion. J'adore apprendre un nouveau langage de programmation ou explorer un 
+                        nouveau framework avec mes projets personnels, cela me permet de découvrir de nouveaux concepts ou de nouvelles manières de coder.
+                        <br>
+                        Je développe:
+                    </p>
+                    <ul class="ul-about-me">
+                        <li>des sites web ou appications web</li>
+                        <li>des appications mobiles</li>
+                        <li>des progiciels (logiciel pour pc)</li>
+                    </ul>
+                    <p class="about-me part-2">
+                        Je travaille de manière organisé, rigoureux dans les tâches professionnelles tout en tenant compte d'éventuelles 
+                        évolutions dans le futur afin de prendre de l'avance.
+                        Quelque soit le projet à réaliser, aussi gros soit-il, aussi proche soit le deadline, je me donne les moyens d’atteindre 
+                        mes objectifs tout en délivrant un travail de qualité le tout dans les bonnes pratiques de sécurité.
+                    </p>
+                </div>
                 <?= quote_view("Abraham Maslow", "Si le seul outil que vous avez est un marteau, vous tendez à voir tout problème comme un clou.") ?>
             </section>
         </main>

@@ -18,7 +18,26 @@
         }
 
         public function action() {
-            if(isset($this->tabUrl[$_SERVER["REQUEST_URI"]])){
+            if($_SERVER["REQUEST_URI"] === '/'){
+                $languageSite = ['fr' => 'fr', 'en' => 'en'];    // This is the only languages available for the website
+                $lang = 'fr';
+                $acceptLanguage = explode(',', $_SERVER["HTTP_ACCEPT_LANGUAGE"]);
+                array_shift($acceptLanguage);
+                $tablanguage = [];
+                foreach($acceptLanguage as $value){
+                    $tmp = explode(';', $value);
+                    $tablanguage[$tmp[0]] = floatval(str_replace('q=', '', $tmp[1]));
+                }
+
+                foreach($tablanguage as $key => $value){
+                    if(isset($languageSite[$key])){
+                        $lang = $key;
+                        header('Location: /' . $lang);
+                        die();
+                        break;
+                    }
+                }
+            } else if(isset($this->tabUrl[$_SERVER["REQUEST_URI"]])){
                 header("Location: " . $this->tabUrl[$_SERVER["REQUEST_URI"]]);
                 die();
             }

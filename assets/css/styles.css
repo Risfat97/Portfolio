@@ -15,7 +15,10 @@ a {
 
 a[target=_blank]::after {
     content: "↗︎";
-    padding-left: 2px;
+    font-size: 12px;
+    padding: 0;
+    border: 1px solid var(--col-dark);
+    margin-left: 2px;
 }
 
 a[target=_blank]:hover{
@@ -280,6 +283,10 @@ article.exp-container .body .exp-tools-header{
 
 .text-underline{
     text-decoration: underline;
+}
+
+.m-0{
+    margin: 0;
 }
 
 @media (max-width: 600px){

@@ -50,22 +50,32 @@
             "Profil LinkedIn" => [
                 "href" => "https://www.linkedin.com/in/tafsir-mbodj-ndiour-4a46b0161/",
                 "class" => "d-flex align-items-center item-contact",
-                "icone" => "linkedin-brands"
+                "icone" => "linkedin-brands",
+                "property" => "foaf:account",
+                "value" => "https://www.linkedin.com/in/tafsir-mbodj-ndiour-4a46b0161/"
             ],
             "Profil Github" => [
                 "href" => "https://github.com/risfat97",
                 "class" => "d-flex align-items-center item-contact",
-                "icone" => "github-brands"
+                "icone" => "github-brands",
+                "property" => "foaf:account",
+                "value" => "https://github.com/risfat97"
+
             ],
             "+33 7 73 16 91 58" => [
                 "href" => "tel:+33773169158",
                 "class" => "d-flex align-items-center item-contact",
-                "icone" => "phone-solid"
+                "icone" => "phone-solid",
+                "property" => "schm:telephone",
+                "value" => "+33773169158"
+
             ],
             "tamsir97@gmail.com" => [
                 "href" => "mailto:tamsir97@gmail.com",
                 "class" => "d-flex align-items-center item-contact",
-                "icone" => "envelope-solid"
+                "icone" => "envelope-solid",
+                "property" => "schm:email",
+                "value" => "tamsir97@gmail.com"
             ]
         ];
 
@@ -73,22 +83,30 @@
             "LinkedIn profile" => [
                 "href" => "https://www.linkedin.com/in/tafsir-mbodj-ndiour-4a46b0161/",
                 "class" => "d-flex align-items-center item-contact",
-                "icone" => "linkedin-brands"
+                "icone" => "linkedin-brands",
+                "property" => "foaf:account",
+                "value" => "https://www.linkedin.com/in/tafsir-mbodj-ndiour-4a46b0161/"
             ],
             "Github profile" => [
                 "href" => "https://github.com/risfat97",
                 "class" => "d-flex align-items-center item-contact",
-                "icone" => "github-brands"
+                "icone" => "github-brands",
+                "property" => "foaf:account",
+                "value" => "https://github.com/risfat97"
             ],
             "+33 7 73 16 91 58" => [
                 "href" => "tel:+33773169158",
                 "class" => "d-flex align-items-center item-contact",
-                "icone" => "phone-solid"
+                "icone" => "phone-solid",
+                "property" => "schm:telephone",
+                "value" => "+33773169158"
             ],
             "tamsir97@gmail.com" => [
                 "href" => "mailto:tamsir97@gmail.com",
                 "class" => "d-flex align-items-center item-contact",
-                "icone" => "envelope-solid"
+                "icone" => "envelope-solid",
+                "property" => "schm:email",
+                "value" => "tamsir97@gmail.com"
             ]
         ];
 
