@@ -7,14 +7,7 @@
 ?>
 
 <!DOCTYPE html>
-<html lang="en" dir="ltr"
-    xmlns="http://www.w3.org/1999/xhtml"
-    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-    xmlns:dc="http://purl.org/dc/elements/1.1/"
-    xmlns:foaf="http://xmlns.com/foaf/0.1/" 
-    xmlns:schm="http://schema.org/">
+<html lang="en" dir="ltr">
     <?= head_view("summary") ?>
     <body>
         <main about="#tafsir" typeof="foaf:Person">
@@ -30,7 +23,7 @@
             <section>
                 <div class="language-container">
                     <img class="icone icone-langue" src="assets/images/language.svg" alt="Icone">
-                    <select name="langue" id="langue" property="schm:knowsLanguage">
+                    <select name="langue" id="langue" property="schema:knowsLanguage">
                         <option value="fr">French</option>
                         <option value="en" selected>English</option>
                     </select>
@@ -38,7 +31,7 @@
                 <header class="author-container">
                     <h1 class="author"
                         property="foaf:depicts" 
-                        rdf:resource="assets/images/tafsir.png">Tafsir Mbodj</span> <span property="foaf:familyName">NDIOUR</span></h1>
+                        resource="assets/images/tafsir.png"><span property="foaf:firstName">Tafsir Mbodj</span> <span property="foaf:familyName">NDIOUR</span></h1>
                     <details class="contact-details">
                         <summary>Contact info</summary>
                         <p>
@@ -50,31 +43,32 @@
                             <a class="d-flex align-items-center item-contact text-dark">
                                 <img class="icone icone-location" src="assets/images/pin_drop.svg" alt="Icone">
                                 <span class="text-dark" 
-                                    property="schm:homeLocation">Paris 75014</span>
+                                    property="schema:homeLocation">Paris 75014</span>
                             </a>
                         </p>
                     </details>
                 </header>
                 <p class="who-is">
-                    <span property="schm:jobTitle">Full Stack developer</span> in apprenticeship at 
+                    <span property="schema:jobTitle">Full Stack developer</span> in apprenticeship at 
                     <a class="text-underline text-dark" 
                         target="_blank" 
                         href="https://etienne-services.fr" 
                         rel="nofollow noopener noreferrer" 
                         property="foaf:workplaceHomepage" 
-                        rdf:resource="https://etienne-services.fr">ETIENNE SERVICES</a>, 
+                        resource="https://etienne-services.fr">ETIENNE SERVICES</a>, 
                     co-founder of 
                     <a class="text-underline text-dark" 
                         target="_blank" 
                         href="https://jant.tech" 
                         rel="nofollow noopener noreferrer" 
-                        property="schm:memberOf">Jant TECH</a>.
+                        property="schema:memberOf">Jant TECH</a>.
                 </p>
                 <hr>
                 <?= quote_view("Charles Aznavour", "I allways learn something. I never fell asleep a night in my life without learning something.") ?>
                 <div property="dc:description">
                     <p class="about-me part-1">
-                        <span class="just-T">T</span><span class="strong just-afsir">afsir</span> is an enthusiast developer who like sharing, working 
+                        <span class="just-T">T</span>
+                        <span class="strong just-afsir">afsir</span>&nbsp;is an enthusiast developer who like sharing, working 
                         in a team while knowing how to evolve autonomously.<br>
                         I started development with the C programming language with a small class project (a diary with a graphic interface and 
                         database), then it becomes a real passion. I am fond of learning a new programming language or exploring a new framework 

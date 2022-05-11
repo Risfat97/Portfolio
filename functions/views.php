@@ -33,7 +33,7 @@
             $active = 'active';
         }
         return <<<HTML
-            <a href="$href" class="$class $active" property="rdfs:seeAlso" rdf:resource="$href">
+            <a href="$href" class="$class $active" property="rdfs:seeAlso" resource="$href">
                 <img class="icone" src="assets/images/$iconeName.svg" alt="Icone">
                 <$hType>$title</$hType>
             </a>
@@ -47,7 +47,7 @@
                     target="_blank"
                     class="$class text-underline text-dark" 
                     property="$property" 
-                    rdf:resource="$value">
+                    resource="$value">
                 <img class="icone icone-contact" src="assets/images/$icone.svg" alt="Icone">
                 <span>$title</span>
             </a>
@@ -79,7 +79,7 @@
                         '</p>' . 
                         '<ul>';
             foreach($tools as $value){
-                $listTools .= '<li class="text-gray" property="schm:knowsAbout">' . $value . '</li>';
+                $listTools .= '<li class="text-gray" property="schema:knowsAbout">' . $value . '</li>';
             }
             $listTools .= '</ul>';
         }

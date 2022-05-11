@@ -66,7 +66,7 @@
                 "href" => "tel:+33773169158",
                 "class" => "d-flex align-items-center item-contact",
                 "icone" => "phone-solid",
-                "property" => "schm:telephone",
+                "property" => "schema:telephone",
                 "value" => "+33773169158"
 
             ],
@@ -74,7 +74,7 @@
                 "href" => "mailto:tamsir97@gmail.com",
                 "class" => "d-flex align-items-center item-contact",
                 "icone" => "envelope-solid",
-                "property" => "schm:email",
+                "property" => "schema:email",
                 "value" => "tamsir97@gmail.com"
             ]
         ];
@@ -98,14 +98,14 @@
                 "href" => "tel:+33773169158",
                 "class" => "d-flex align-items-center item-contact",
                 "icone" => "phone-solid",
-                "property" => "schm:telephone",
+                "property" => "schema:telephone",
                 "value" => "+33773169158"
             ],
             "tamsir97@gmail.com" => [
                 "href" => "mailto:tamsir97@gmail.com",
                 "class" => "d-flex align-items-center item-contact",
                 "icone" => "envelope-solid",
-                "property" => "schm:email",
+                "property" => "schema:email",
                 "value" => "tamsir97@gmail.com"
             ]
         ];

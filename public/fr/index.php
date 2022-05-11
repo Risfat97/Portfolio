@@ -7,14 +7,7 @@
 ?>
 
 <!DOCTYPE html>
-<html lang="fr" dir="ltr"
-    xmlns="http://www.w3.org/1999/xhtml"
-    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-    xmlns:dc="http://purl.org/dc/elements/1.1/"
-    xmlns:foaf="http://xmlns.com/foaf/0.1/" 
-    xmlns:schm="http://schema.org/">
+<html lang="fr" dir="ltr">
     <?= head_view("résumé") ?>
     <body>
         <main about="#tafsir" typeof="foaf:Person">
@@ -30,7 +23,7 @@
             <section>
                 <div class="language-container">
                     <img class="icone icone-langue" src="assets/images/language.svg" alt="Icone">
-                    <select name="langue" id="langue" property="schm:knowsLanguage">
+                    <select name="langue" id="langue" property="schema:knowsLanguage">
                         <option value="fr" selected>Français</option>
                         <option value="en">Anglais</option>
                     </select>
@@ -38,7 +31,7 @@
                 <header class="author-container">
                     <h1 class="author" 
                         property="foaf:depicts" 
-                        rdf:resource="assets/images/tafsir.png">
+                        resource="assets/images/tafsir.png">
                         <span property="foaf:firstName">Tafsir Mbodj</span> <span property="foaf:familyName">NDIOUR</span></h1>
                     <details class="contact-details">
                         <summary>Infos contact</summary>
@@ -51,31 +44,32 @@
                             <a class="d-flex align-items-center item-contact text-dark">
                                 <img class="icone icone-location" src="assets/images/pin_drop.svg" alt="Icone">
                                 <span class="text-dark" 
-                                    property="schm:homeLocation">Paris 75014</span>
+                                    property="schema:homeLocation">Paris 75014</span>
                             </a>
                         </p>
                     </details>
                 </header>
                 <p class="who-is">
-                    <span property="schm:jobTitle">Développeur full stack</span> en apprentissage chez 
+                    <span property="schema:jobTitle">Développeur full stack</span> en apprentissage chez 
                     <a class="text-underline text-dark" 
                         target="_blank" 
                         href="https://etienne-services.fr" 
                         rel="nofollow noopener noreferrer" 
                         property="foaf:workplaceHomepage" 
-                        rdf:resource="https://etienne-services.fr">ÉTIENNE SERVICES</a>, 
+                        resource="https://etienne-services.fr">ÉTIENNE SERVICES</a>, 
                     co-fondateur de 
                     <a class="text-underline text-dark" 
                         target="_blank" 
                         href="https://jant.tech" 
                         rel="nofollow noopener noreferrer"
-                        property="schm:memberOf">Jant TECH</a>.
+                        property="schema:memberOf">Jant TECH</a>.
                 </p>
                 <hr>
                 <?= quote_view("Charles Aznavour", "J'apprends toujours quelque chose. Je ne me suis jamais endormi un soir de ma vie sans apprendre quelque chose.") ?>
                 <div property="dc:description">
                     <p class="about-me part-1">
-                        <span class="just-T">T</span><span class="strong just-afsir">afsir</span> est un développeur passionné qui aime partager, 
+                        <span class="just-T">T</span> 
+                        <span class="strong just-afsir">afsir</span>&nbsp;est un développeur passionné qui aime partager, 
                         travailler en équipe tout en sachant évoluer de manière autonome. <br>
                         J'ai commencé le développement avec le langage C avec comme petit projet en classe (un agenda avec interface graphique et une base 
                         de données), ensuite c'est devenu très vite une vraie passion. J'adore apprendre un nouveau langage de programmation ou explorer un 
