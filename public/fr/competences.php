@@ -11,9 +11,8 @@
     <body>
         <main about="#tafsir" typeof="foaf:Person">
             <aside>
-                <img class="img-profil" src="assets/images/tafsir.png" alt="Tafsir NDIOUR" property="foaf:Image">
-                <span property="foaf:depicts" 
-                    resource="assets/images/tafsir.png"
+                <img class="img-profil" src="assets/images/tafsir.png" alt="Tafsir NDIOUR" property="foaf:img">
+                <span property="foaf:depiction"
                     hidden>Tafsir Mbodj NDIOUR</span>
                 <?php
                     foreach($asideLinks as $key => $value) {

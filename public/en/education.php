@@ -3,6 +3,8 @@
     require_once __DIR__ . "/../../models/AppRepository.php";
 
     $asideLinks = AppRepository::$asideLinksEn;
+    $formations = AppRepository::$educationEn;
+
 ?>
 
 <!DOCTYPE html>
@@ -11,9 +13,10 @@
     <body>
         <main about="#tafsir" typeof="foaf:Person">
             <aside>
-                <img class="img-profil" src="assets/images/tafsir.png" alt="Tafsir NDIOUR" property="foaf:Image">
+                <img class="img-profil" src="assets/images/tafsir.png" alt="Tafsir NDIOUR" property="foaf:img">
+                <span property="foaf:depiction"
+                    hidden>Tafsir Mbodj NDIOUR</span>
                 <span property="foaf:depicts" 
-                    resource="assets/images/tafsir.png"
                     hidden>Tafsir Mbodj NDIOUR</span>
                 <?php
                     foreach($asideLinks as $key => $value) {
@@ -30,7 +33,11 @@
                         <option value="en" selected>English</option>
                     </select>
                 </div>
-                <p>This page is under building.</p>
+                <?php
+                    foreach($formations as $key => $value) {
+                        echo education_view($value["school"], $value["logo"], $value["formation"], $value["interval"]);
+                    }
+                ?>
             </section>
         </main>
         <script src="assets/js/app.js"></script>

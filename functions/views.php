@@ -94,4 +94,17 @@
             </article>
         HTML;
     }
+
+    function education_view($school, $logo, $formation, $interval){
+        return <<<HTML
+            <article class="edu-container">
+                <img class="edu-logo" src="$logo" alt="Sup Galilée">
+                <div class="edu-body">
+                    <h4 class="school-name" property="dbo:EducationalInstitution">$school</h4>
+                    <h4 class="edu-title text-gray">$formation</h4>
+                    <p class="edu-interval text-gray">$interval</p>
+                </div>
+            </article>
+        HTML;
+    }
 ?>
