@@ -194,8 +194,14 @@ img.icone.quote{
 }
 
 article.exp-container:nth-of-type(1),
-article.edu-container:nth-of-type(1){
+article.edu-container:nth-of-type(1),
+p.bref-desc{
     margin-top: 32px;
+}
+
+p.bref-desc{
+    opacity: .8;
+    line-height: 1.3;
 }
 
 article.exp-container{
@@ -296,6 +302,36 @@ article.exp-container .body .exp-tools-header{
     margin-bottom: 8px;
 }
 
+article.section-skill ul{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0;
+    width: 100%;
+    padding: 0;
+}
+
+article.section-skill ul > li{
+    background-color: #fff;
+    padding: .5rem .8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 1rem;
+    border: 1px double rgba(0,0,0,.3);
+    box-shadow: 1px 1px 2px rgba(0,0,0,.3);
+    align-self: stretch;
+}
+
+li.skill-container *{
+    margin: 0;
+}
+
+li.skill-container h4{
+    margin-bottom: 4px;
+}
+
 .text-gray{
     color: var(--col-gray);
 }
@@ -367,6 +403,27 @@ article.exp-container .body .exp-tools-header{
         width: 250px;
         margin-bottom: 8px;
     }
+
+    article.section-skill ul{
+        justify-content: space-between;
+    }
+
+    article.section-skill ul > li{
+        width: calc(50% - 32px);
+        margin-bottom: 8px;
+    }
+
+    article.section-skill ul > li:nth-child(odd){
+        margin-left: 16px;
+    }
+
+    article.section-skill ul > li:nth-child(even){
+        margin-right: 16px;
+    }
+
+    li.skill-container img{
+        width: 96px;
+    }
 }
 
 @media (min-width: 601px){
@@ -418,5 +475,14 @@ article.exp-container .body .exp-tools-header{
         margin: 0;
         margin-left: 16px;
         width: 180px;
+    }
+
+    article.section-skill ul > li{
+        margin: 0 8px;
+        margin-bottom: 8px;
+    }
+
+    li.skill-container img{
+        width: 80px;
     }
 }

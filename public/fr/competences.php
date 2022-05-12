@@ -3,6 +3,9 @@
     require_once __DIR__ . "/../../models/AppRepository.php";
 
     $asideLinks = AppRepository::$asideLinksFr;
+    $langages = AppRepository::$languages;
+    $technos = AppRepository::$techno;
+    $outils = AppRepository::$tools;
 ?>
 
 <!DOCTYPE html>
@@ -21,7 +24,6 @@
                 ?>
             </aside>
             <section>
-                <h2 hidden>Expériences</h2>
                 <div class="language-container">
                     <img class="icone icone-langue" src="assets/images/language.svg" alt="Icone">
                     <select name="langue" id="langue" property="schema:knowsLanguage">
@@ -29,7 +31,40 @@
                         <option value="en">Anglais</option>
                     </select>
                 </div>
-                <p>Cette page est en cours de construction.</p>
+                <p class="bref-desc">
+                    <span property="foaf:firstName">Tafsir</span> est passionné par les nouvelles technologies et est souvent entrain 
+                    d'apprendre un nouveau langage / framework ou un nouveau outil.
+                </p>
+                <article class="section-skill">
+                    <h2>Langages</h2>
+                    <ul>
+                        <?php
+                            foreach($langages as $value) {
+                                echo skill_view($value["name"], $value["logo"]);
+                            }
+                        ?>
+                    </ul>
+                </article>
+                <article class="section-skill">
+                    <h2>Technologies</h2>
+                    <ul>
+                        <?php
+                            foreach($technos as $value) {
+                                echo skill_view($value["name"], $value["logo"]);
+                            }
+                        ?>
+                    </ul>
+                </article>
+                <article class="section-skill">
+                    <h2>Outils</h2>
+                    <ul>
+                        <?php
+                            foreach($outils as $value) {
+                                echo skill_view($value["name"], $value["logo"]);
+                            }
+                        ?>
+                    </ul>
+                </article>
             </section>
         </main>
         <script src="assets/js/app.js"></script>

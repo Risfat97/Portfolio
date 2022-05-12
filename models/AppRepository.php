@@ -217,5 +217,98 @@
                 "interval" => "2017 - 2019"
             ]
         ];
+
+        public static $languages = [
+            [
+                "name" => "C",
+                "logo" => "assets/images/langage_c.png"
+            ],
+            [
+                "name" => "C++",
+                "logo" => "assets/images/langage_cpp.png"
+            ],
+            [
+                "name" => "Java",
+                "logo" => "assets/images/java.svg"
+            ],
+            [
+                "name" => "PHP",
+                "logo" => "assets/images/php.svg"
+            ],
+            [
+                "name" => "Javascript",
+                "logo" => "assets/images/javascript.svg"
+            ],
+            [
+                "name" => "HTML5",
+                "logo" => "assets/images/html.png"
+            ],
+            [
+                "name" => "CSS3",
+                "logo" => "assets/images/css.svg"
+            ],
+            [
+                "name" => "SQL",
+                "logo" => "assets/images/sql.svg"
+            ],
+            [
+                "name" => "Python",
+                "logo" => "assets/images/python.png"
+            ],
+            [
+                "name" => "Prolog",
+                "logo" => "assets/images/swi-prolog.png"
+            ],
+            [
+                "name" => "Ocaml",
+                "logo" => "assets/images/ocaml.png"
+            ]
+        ];
+
+        public static $techno = [
+            [
+                "name" => "Flutter",
+                "logo" => "assets/images/flutter.jpeg"
+            ],
+            [
+                "name" => "NodeJS",
+                "logo" => "assets/images/nodejs.png"
+            ],
+            [
+                "name" => "Angular",
+                "logo" => "assets/images/angular.png"
+            ],
+            [
+                "name" => "React",
+                "logo" => "assets/images/react.svg"
+            ],
+            [
+                "name" => "Symfony",
+                "logo" => "assets/images/symfony.svg"
+            ],
+            [
+                "name" => "MySQL",
+                "logo" => "assets/images/mysql.png"
+            ],
+            [
+                "name" => "Matlab",
+                "logo" => "assets/images/matlab.png"
+            ]
+        ];
+
+        public static $tools = [
+            [
+                "name" => "Git",
+                "logo" => "assets/images/git.png"
+            ],
+            [
+                "name" => "Linux",
+                "logo" => "assets/images/linux.png"
+            ],
+            [
+                "name" => "Visual Studio Code",
+                "logo" => "assets/images/vscode.png"
+            ]
+        ];
     }
 ?>

@@ -3,6 +3,9 @@
     require_once __DIR__ . "/../../models/AppRepository.php";
 
     $asideLinks = AppRepository::$asideLinksEn;
+    $languages = AppRepository::$languages;
+    $technos = AppRepository::$techno;
+    $tools = AppRepository::$tools;
 ?>
 
 <!DOCTYPE html>
@@ -29,7 +32,40 @@
                         <option value="en" selected>English</option>
                     </select>
                 </div>
-                <p>This page is under building.</p>
+                <p class="bref-desc">
+                    <span property="foaf:firstName">Tafsir</span> has a passion for new technologies and he is often learning new programming 
+                    language / framework or tool.
+                </p>
+                <article class="section-skill">
+                    <h2>Languages</h2>
+                    <ul>
+                        <?php
+                            foreach($languages as $value) {
+                                echo skill_view($value["name"], $value["logo"]);
+                            }
+                        ?>
+                    </ul>
+                </article>
+                <article class="section-skill">
+                    <h2>Technologies</h2>
+                    <ul>
+                        <?php
+                            foreach($technos as $value) {
+                                echo skill_view($value["name"], $value["logo"]);
+                            }
+                        ?>
+                    </ul>
+                </article>
+                <article class="section-skill">
+                    <h2>Tools</h2>
+                    <ul>
+                        <?php
+                            foreach($tools as $value) {
+                                echo skill_view($value["name"], $value["logo"]);
+                            }
+                        ?>
+                    </ul>
+                </article>
             </section>
         </main>
         <script src="assets/js/app.js"></script>

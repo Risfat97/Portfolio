@@ -107,4 +107,13 @@
             </article>
         HTML;
     }
+
+    function skill_view($name, $logo, $size = 72){
+        return <<<HTML
+            <li class="skill-container">
+                <h4 class="skill-name" property="dc:knowAbout">$name</h4>
+                <img class="skill-logo" src="$logo" alt="Skill's logo">
+            </li>
+        HTML;
+    }
 ?>
