@@ -1,5 +1,6 @@
 <?php
     function head_view($title){
+        $root = $_SERVER["DOCUMENT_ROOT"];
         return <<<HTML
             <head>
                 <meta charset="UTF-8">
@@ -10,7 +11,7 @@
                 <meta name="creator" content="Tafsir Mbodj NDIOUR">
                 <title>Portfolio Tafsir Mbodj NDIOUR: $title</title>
                 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Happy+Monkey">
-                <link rel="stylesheet" href="assets/css/styles.css">
+                <link rel="stylesheet" href="/assets/css/styles.css">
             </head>
         HTML;
     }
@@ -31,7 +32,7 @@
         if($lang === 'fr'){
             return <<<HTML
                 <div class="language-container">
-                    <img class="icone icone-langue" src="assets/images/language.svg" alt="Icone">
+                    <img class="icone icone-langue" src="/assets/images/language.svg" alt="Icone">
                     <select name="langue" id="langue" property="schema:knowsLanguage">
                         <option value="fr" selected>Français</option>
                         <option value="en">Anglais</option>
@@ -42,7 +43,7 @@
         } else if($lang === 'en'){
             return <<<HTML
                 <div class="language-container">
-                    <img class="icone icone-langue" src="assets/images/language.svg" alt="Icone">
+                    <img class="icone icone-langue" src="/assets/images/language.svg" alt="Icone">
                     <select name="langue" id="langue" property="schema:knowsLanguage">
                         <option value="fr">French</option>
                         <option value="en" selected>English</option>
@@ -54,7 +55,7 @@
         else{
             return <<<HTML
                 <div class="language-container">
-                    <img class="icone icone-langue" src="assets/images/language.svg" alt="Icone">
+                    <img class="icone icone-langue" src="/assets/images/language.svg" alt="Icone">
                     <select name="langue" id="langue" property="schema:knowsLanguage">
                         <option value="fr">Французский</option>
                         <option value="en">Английский язык</option>
@@ -65,16 +66,14 @@
         }
     }
 
-    function link_with_icone($title, $href, $class, $iconeName, $hType, $is_lang_ru = false) {
+    function link_with_icone($title, $href, $class, $iconeName, $hType) {
         $active = '';
-        if($is_lang_ru){
-            $active = 'active';
-        } else if(strcmp(utf8_encode($_SERVER["REQUEST_URI"]), $href) === 0){
+        if(strcmp(utf8_encode($_SERVER["REQUEST_URI"]), $href) === 0){
             $active = 'active';
         }
         return <<<HTML
             <a href="$href" class="$class $active" property="rdfs:seeAlso" resource="$href">
-                <img class="icone" src="assets/images/$iconeName.svg" alt="Icone">
+                <img class="icone" src="/assets/images/$iconeName.svg" alt="Icone">
                 <$hType>$title</$hType>
             </a>
         HTML;
@@ -88,7 +87,7 @@
                     class="$class text-underline text-dark" 
                     property="$property" 
                     resource="$value">
-                <img class="icone icone-contact" src="assets/images/$icone.svg" alt="Icone">
+                <img class="icone icone-contact" src="/assets/images/$icone.svg" alt="Icone">
                 <span>$title</span>
             </a>
         HTML;
@@ -99,7 +98,7 @@
             <p class="citation">
                 <img class="icone quote quote-reverse" src="assets/images/format_quote.svg" alt="Icone">
                 <em>$quote</em>
-                <img class="icone quote" src="assets/images/format_quote.svg" alt="Icone">
+                <img class="icone quote" src="/assets/images/format_quote.svg" alt="Icone">
                 <br>
                 <strong>$author</strong>
             </p>

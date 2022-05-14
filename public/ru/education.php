@@ -12,12 +12,12 @@
     <body>
         <main about="#tafsir" typeof="foaf:Person">
             <aside>
-                <img class="img-profil" src="assets/images/tafsir.png" alt="Tafsir NDIOUR" property="foaf:img">
+                <img class="img-profil" src="/assets/images/tafsir.png" alt="Tafsir NDIOUR" property="foaf:img">
                 <span property="foaf:depiction"
                     hidden>Tafsir Mbodj NDIOUR</span>
                 <?php
                     foreach($asideLinks as $key => $value) {
-                        echo link_with_icone($key, $value["href"], $value["class"], $value["icone"], 'h3', true);
+                        echo link_with_icone($key, $value["href"], $value["class"], $value["icone"], 'h3');
                     }
                 ?>
             </aside>

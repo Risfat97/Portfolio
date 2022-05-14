@@ -53,17 +53,17 @@
                 "icone" => "badge"
             ],
             "опыт" => [
-                "href" => "/опыт",
+                "href" => "/ru/experience",
                 "class" => "aside-link",
                 "icone" => "military_tech"
             ],
             "тренинги" => [
-                "href" => "/тренинги",
+                "href" => "/ru/education",
                 "class" => "aside-link",
                 "icone" => "school"
             ],
             "навыки" => [
-                "href" => "/навыки",
+                "href" => "/ru/skills",
                 "class" => "aside-link",
                 "icone" => "auto_awesome"
             ]
@@ -235,7 +235,7 @@
         public static $experiencesRu = [
             [
                 "title" => "Разработчик веб- и мобильных приложений в <a class=\"text-underline text-dark\" target=\"_blank\" href=\"https://etienne-services.fr\" rel=\"nofollow noopener noreferrer\">ÉTIENNE SERVICES</a>.",
-                "logo" => "assets/images/etienne-services.jpeg",
+                "logo" => "/assets/images/etienne-services.jpeg",
                 "interval" => "сентябрь 2021 года - В настоящее время",
                 "tools" => [
                     "Flutter",
@@ -247,7 +247,7 @@
             ],
             [
                 "title" => "Соучредитель <a class=\"text-underline text-dark\" target=\"_blank\" href=\"https://jant.tech\" rel=\"nofollow noopener noreferrer\">Jant TECH</a> и front-end/back-end разработчик.",
-                "logo" => "assets/images/jant-tech.png",
+                "logo" => "/assets/images/jant-tech.png",
                 "interval" => "июль 2020 года - В настоящее время",
                 "tools" => [
                     "Angular / Typescript",
@@ -259,7 +259,7 @@
             ],
             [
                 "title" => "Репетитор по языку Си в <a class=\"text-underline text-dark\" target=\"_blank\" href=\"https://galilee.univ-paris13.fr/\" rel=\"nofollow noopener noreferrer\">Institut Galilée - Университет Sorbonne Paris Nord</a>.",
-                "logo" => "assets/images/logo_institut_galilee.jpeg",
+                "logo" => "/assets/images/logo_institut_galilee.jpeg",
                 "interval" => "ноябрь 2020 года - июль 2021 года",
                 "tools" => []
             ],
@@ -268,19 +268,19 @@
         public static $educationFr = [
             "supgal" => [
                 "school" => "Sup Galilée - Université Sorbonne Paris Nord",
-                "logo" => "assets/images/sup_galilee.png",
+                "logo" => "/assets/images/sup_galilee.png",
                 "formation" => "Cycle d'ingénieur informatique",
                 "interval" => "Depuis septembre 2020",
             ],
             "instgal" => [
                 "school" => "Institut Galilée - Université Sorbonne Paris Nord",
-                "logo" => "assets/images/institut_galilee.png",
+                "logo" => "/assets/images/institut_galilee.png",
                 "formation" => "Deuxième année licence informatique",
                 "interval" => "2019 - 2020"
             ],
             "ugb" => [
                 "school" => "Université Gaston Berger, Sénégal",
-                "logo" => "assets/images/ugb.png",
+                "logo" => "/assets/images/ugb.png",
                 "formation" => "Deuxième année licence Maths Physique Informatique",
                 "interval" => "2017 - 2019"
             ]
@@ -289,19 +289,19 @@
         public static $educationEn = [
             "supgal" => [
                 "school" => "Sup Galilée - Université Sorbonne Paris Nord",
-                "logo" => "assets/images/sup_galilee.png",
+                "logo" => "/assets/images/sup_galilee.png",
                 "formation" => "Computer engineering school",
                 "interval" => "Since september 2020",
             ],
             "instgal" => [
                 "school" => "Institut Galilée - Université Sorbonne Paris Nord",
-                "logo" => "assets/images/institut_galilee.png",
+                "logo" => "/assets/images/institut_galilee.png",
                 "formation" => "Second year computer science degree",
                 "interval" => "2019 - 2020"
             ],
             "ugb" => [
                 "school" => "Université Gaston Berger, Sénégal",
-                "logo" => "assets/images/ugb.png",
+                "logo" => "/assets/images/ugb.png",
                 "formation" => "Second year undergraduate degree in Maths Physics Computer Science",
                 "interval" => "2017 - 2019"
             ]
@@ -310,19 +310,19 @@
         public static $educationRu = [
             "supgal" => [
                 "school" => "Sup Galilée - университет Sorbonne Paris Nord",
-                "logo" => "assets/images/sup_galilee.png",
+                "logo" => "/assets/images/sup_galilee.png",
                 "formation" => "Цикл компьютерной инженерии",
                 "interval" => "С сентября 2020 года",
             ],
             "instgal" => [
                 "school" => "Institut Galilée - университет Sorbonne Paris Nord",
-                "logo" => "assets/images/institut_galilee.png",
+                "logo" => "/assets/images/institut_galilee.png",
                 "formation" => "Второй курс Бакалавр наук в области компьютерных наук",
                 "interval" => "2019 - 2020"
             ],
             "ugb" => [
                 "school" => "университет Gaston Berger, Sénégal",
-                "logo" => "assets/images/ugb.png",
+                "logo" => "/assets/images/ugb.png",
                 "formation" => "Второй курс бакалавриата Математика Физика Компьютерные науки",
                 "interval" => "2017 - 2019"
             ]
@@ -331,93 +331,93 @@
         public static $languages = [
             [
                 "name" => "C",
-                "logo" => "assets/images/langage_c.png"
+                "logo" => "/assets/images/langage_c.png"
             ],
             [
                 "name" => "C++",
-                "logo" => "assets/images/langage_cpp.png"
+                "logo" => "/assets/images/langage_cpp.png"
             ],
             [
                 "name" => "Java",
-                "logo" => "assets/images/java.svg"
+                "logo" => "/assets/images/java.svg"
             ],
             [
                 "name" => "PHP",
-                "logo" => "assets/images/php.svg"
+                "logo" => "/assets/images/php.svg"
             ],
             [
                 "name" => "Javascript",
-                "logo" => "assets/images/javascript.svg"
+                "logo" => "/assets/images/javascript.svg"
             ],
             [
                 "name" => "HTML5",
-                "logo" => "assets/images/html.png"
+                "logo" => "/assets/images/html.png"
             ],
             [
                 "name" => "CSS3",
-                "logo" => "assets/images/css.svg"
+                "logo" => "/assets/images/css.svg"
             ],
             [
                 "name" => "SQL",
-                "logo" => "assets/images/sql.svg"
+                "logo" => "/assets/images/sql.svg"
             ],
             [
                 "name" => "Python",
-                "logo" => "assets/images/python.png"
+                "logo" => "/assets/images/python.png"
             ],
             [
                 "name" => "Prolog",
-                "logo" => "assets/images/swi-prolog.png"
+                "logo" => "/assets/images/swi-prolog.png"
             ],
             [
                 "name" => "Ocaml",
-                "logo" => "assets/images/ocaml.png"
+                "logo" => "/assets/images/ocaml.png"
             ]
         ];
 
         public static $techno = [
             [
                 "name" => "Flutter",
-                "logo" => "assets/images/flutter.jpeg"
+                "logo" => "/assets/images/flutter.jpeg"
             ],
             [
                 "name" => "NodeJS",
-                "logo" => "assets/images/nodejs.png"
+                "logo" => "/assets/images/nodejs.png"
             ],
             [
                 "name" => "Angular",
-                "logo" => "assets/images/angular.png"
+                "logo" => "/assets/images/angular.png"
             ],
             [
                 "name" => "React",
-                "logo" => "assets/images/react.svg"
+                "logo" => "/assets/images/react.svg"
             ],
             [
                 "name" => "Symfony",
-                "logo" => "assets/images/symfony.svg"
+                "logo" => "/assets/images/symfony.svg"
             ],
             [
                 "name" => "MySQL",
-                "logo" => "assets/images/mysql.png"
+                "logo" => "/assets/images/mysql.png"
             ],
             [
                 "name" => "Matlab",
-                "logo" => "assets/images/matlab.png"
+                "logo" => "/assets/images/matlab.png"
             ]
         ];
 
         public static $tools = [
             [
                 "name" => "Git",
-                "logo" => "assets/images/git.png"
+                "logo" => "/assets/images/git.png"
             ],
             [
                 "name" => "Linux",
-                "logo" => "assets/images/linux.png"
+                "logo" => "/assets/images/linux.png"
             ],
             [
                 "name" => "Visual Studio Code",
-                "logo" => "assets/images/vscode.png"
+                "logo" => "/assets/images/vscode.png"
             ]
         ];
     }

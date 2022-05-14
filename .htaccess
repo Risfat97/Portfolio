@@ -18,12 +18,17 @@ DefaultType application/x-httpd-php
 	# ROUTES	
 	RewriteRule ^(fr|en|ru)$ 														/public/$1/index.php [L,QSA,NE,NC]
 	RewriteRule ^(fr|en|ru)/(fr|en|ru)$ 											/public/index.php [L,QSA,NE,NC]
+	
 	RewriteRule ^(experiences|formations|competences)$ 								/public/fr/$1.php [L,QSA,NE,NC]
 	RewriteRule ^(experiences|formations|competences)/(fr|en|ru)$ 					/public/index.php [L,QSA,NE,NC]
+
 	RewriteRule ^(experience|education|skills)$ 									/public/en/$1.php [L,QSA,NE,NC]
 	RewriteRule ^(experience|education|skills)/(fr|en|ru)$ 							/public/index.php [L,QSA,NE,NC]
-	RewriteRule ^(опыт|тренинги|навыки)$ 											/public/ru/$1.php [L,QSA,NE,NC]
-	RewriteRule ^(опыт|тренинги|навыки)/(fr|en|ru)$ 								/public/index.php [L,QSA,NE,NC]
+
+
+	RewriteRule ^ru/(experience|education|skills)$ 									/public/ru/$1.php [L,QSA,NE,NC]
+	RewriteRule ^ru/(experience|education|skills)/(fr|en|ru)$ 						/public/index.php [L,QSA,NE,NC]
+
 	RewriteRule ^/$ 																/index.php [L,QSA,NE,NC]
 
 </IfModule>
