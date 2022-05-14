@@ -12,7 +12,7 @@
     <body>
         <main about="#tafsir" typeof="foaf:Person">
             <aside>
-                <img class="img-profil" src="assets/images/tafsir.png" alt="Tafsir NDIOUR" property="foaf:img">
+                <img class="img-profil" src="/assets/images/tafsir.png" alt="Tafsir NDIOUR" property="foaf:img">
                 <span property="foaf:depiction"
                     hidden>Tafsir Mbodj NDIOUR</span>
                 <?php
