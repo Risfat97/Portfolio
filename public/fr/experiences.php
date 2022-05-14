@@ -23,13 +23,7 @@
             </aside>
             <section>
                 <h2 hidden>Expériences</h2>
-                <div class="language-container">
-                    <img class="icone icone-langue" src="assets/images/language.svg" alt="Icone">
-                    <select name="langue" id="langue" property="schema:knowsLanguage">
-                        <option value="fr" selected>Français</option>
-                        <option value="en">Anglais</option>
-                    </select>
-                </div>
+                <?= language_view() ?>
                 <?php
                     foreach($experiences as $value){
                         echo experience_view($value["title"], $value["logo"], $value["interval"], $value["tools"], "fr");

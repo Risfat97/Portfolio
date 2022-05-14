@@ -46,6 +46,29 @@
             ]
         ];
 
+        public static $asideLinksRu = [
+            "резюме" => [
+                "href" => "/ru",
+                "class" => "aside-link",
+                "icone" => "badge"
+            ],
+            "опыт" => [
+                "href" => "/опыт",
+                "class" => "aside-link",
+                "icone" => "military_tech"
+            ],
+            "тренинги" => [
+                "href" => "/тренинги",
+                "class" => "aside-link",
+                "icone" => "school"
+            ],
+            "навыки" => [
+                "href" => "/навыки",
+                "class" => "aside-link",
+                "icone" => "auto_awesome"
+            ]
+        ];
+
         public static $contactItemsFr = [
             "Profil LinkedIn" => [
                 "href" => "https://www.linkedin.com/in/tafsir-mbodj-ndiour-4a46b0161/",
@@ -100,6 +123,39 @@
                 "icone" => "phone-solid",
                 "property" => "schema:telephone",
                 "value" => "+33773169158"
+            ],
+            "tamsir97@gmail.com" => [
+                "href" => "mailto:tamsir97@gmail.com",
+                "class" => "d-flex align-items-center item-contact",
+                "icone" => "envelope-solid",
+                "property" => "schema:email",
+                "value" => "tamsir97@gmail.com"
+            ]
+        ];
+
+        public static $contactItemsRu = [
+            "Профиль LinkedIn" => [
+                "href" => "https://www.linkedin.com/in/tafsir-mbodj-ndiour-4a46b0161/",
+                "class" => "d-flex align-items-center item-contact",
+                "icone" => "linkedin-brands",
+                "property" => "foaf:account",
+                "value" => "https://www.linkedin.com/in/tafsir-mbodj-ndiour-4a46b0161/"
+            ],
+            "Профиль Github" => [
+                "href" => "https://github.com/risfat97",
+                "class" => "d-flex align-items-center item-contact",
+                "icone" => "github-brands",
+                "property" => "foaf:account",
+                "value" => "https://github.com/risfat97"
+
+            ],
+            "+33 7 73 16 91 58" => [
+                "href" => "tel:+33773169158",
+                "class" => "d-flex align-items-center item-contact",
+                "icone" => "phone-solid",
+                "property" => "schema:telephone",
+                "value" => "+33773169158"
+
             ],
             "tamsir97@gmail.com" => [
                 "href" => "mailto:tamsir97@gmail.com",
@@ -176,6 +232,39 @@
             ],
         ];
 
+        public static $experiencesRu = [
+            [
+                "title" => "Разработчик веб- и мобильных приложений в <a class=\"text-underline text-dark\" target=\"_blank\" href=\"https://etienne-services.fr\" rel=\"nofollow noopener noreferrer\">ÉTIENNE SERVICES</a>.",
+                "logo" => "assets/images/etienne-services.jpeg",
+                "interval" => "сентябрь 2021 года - В настоящее время",
+                "tools" => [
+                    "Flutter",
+                    "Javascript",
+                    "PHP",
+                    "SQL - Mysql",
+                    "HTML & CSS"
+                ]
+            ],
+            [
+                "title" => "Соучредитель <a class=\"text-underline text-dark\" target=\"_blank\" href=\"https://jant.tech\" rel=\"nofollow noopener noreferrer\">Jant TECH</a> и front-end/back-end разработчик.",
+                "logo" => "assets/images/jant-tech.png",
+                "interval" => "июль 2020 года - В настоящее время",
+                "tools" => [
+                    "Angular / Typescript",
+                    "Javasript",
+                    "PHP",
+                    "SQL - Mysql",
+                    "HTML & CSS",
+                ]
+            ],
+            [
+                "title" => "Репетитор по языку Си в <a class=\"text-underline text-dark\" target=\"_blank\" href=\"https://galilee.univ-paris13.fr/\" rel=\"nofollow noopener noreferrer\">Institut Galilée - Университет Sorbonne Paris Nord</a>.",
+                "logo" => "assets/images/logo_institut_galilee.jpeg",
+                "interval" => "ноябрь 2020 года - июль 2021 года",
+                "tools" => []
+            ],
+        ];
+
         public static $educationFr = [
             "supgal" => [
                 "school" => "Sup Galilée - Université Sorbonne Paris Nord",
@@ -214,6 +303,27 @@
                 "school" => "Université Gaston Berger, Sénégal",
                 "logo" => "assets/images/ugb.png",
                 "formation" => "Second year undergraduate degree in Maths Physics Computer Science",
+                "interval" => "2017 - 2019"
+            ]
+        ];
+
+        public static $educationRu = [
+            "supgal" => [
+                "school" => "Sup Galilée - университет Sorbonne Paris Nord",
+                "logo" => "assets/images/sup_galilee.png",
+                "formation" => "Цикл компьютерной инженерии",
+                "interval" => "С сентября 2020 года",
+            ],
+            "instgal" => [
+                "school" => "Institut Galilée - университет Sorbonne Paris Nord",
+                "logo" => "assets/images/institut_galilee.png",
+                "formation" => "Второй курс Бакалавр наук в области компьютерных наук",
+                "interval" => "2019 - 2020"
+            ],
+            "ugb" => [
+                "school" => "университет Gaston Berger, Sénégal",
+                "logo" => "assets/images/ugb.png",
+                "formation" => "Второй курс бакалавриата Математика Физика Компьютерные науки",
                 "interval" => "2017 - 2019"
             ]
         ];

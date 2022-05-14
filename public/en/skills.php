@@ -25,13 +25,7 @@
             </aside>
             <section>
                 <h2 hidden>Skills</h2>
-                <div class="language-container">
-                    <img class="icone icone-langue" src="assets/images/language.svg" alt="Icone">
-                    <select name="langue" id="langue" property="schema:knowsLanguage">
-                        <option value="fr">French</option>
-                        <option value="en" selected>English</option>
-                    </select>
-                </div>
+                <?= language_view('en') ?>
                 <p class="bref-desc">
                     <span property="foaf:firstName">Tafsir</span> has a passion for new technologies and he is often learning new programming 
                     language / framework or tool.

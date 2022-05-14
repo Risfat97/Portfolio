@@ -27,9 +27,49 @@
         HTML;
     }
 
-    function link_with_icone($title, $href, $class, $iconeName, $hType) {
+    function language_view($lang = 'fr'){
+        if($lang === 'fr'){
+            return <<<HTML
+                <div class="language-container">
+                    <img class="icone icone-langue" src="assets/images/language.svg" alt="Icone">
+                    <select name="langue" id="langue" property="schema:knowsLanguage">
+                        <option value="fr" selected>Français</option>
+                        <option value="en">Anglais</option>
+                        <option value="ru">Russe</option>
+                    </select>
+                </div>
+            HTML;
+        } else if($lang === 'en'){
+            return <<<HTML
+                <div class="language-container">
+                    <img class="icone icone-langue" src="assets/images/language.svg" alt="Icone">
+                    <select name="langue" id="langue" property="schema:knowsLanguage">
+                        <option value="fr">French</option>
+                        <option value="en" selected>English</option>
+                        <option value="ru">Russian</option>
+                    </select>
+                </div>
+            HTML;
+        }
+        else{
+            return <<<HTML
+                <div class="language-container">
+                    <img class="icone icone-langue" src="assets/images/language.svg" alt="Icone">
+                    <select name="langue" id="langue" property="schema:knowsLanguage">
+                        <option value="fr">Французский</option>
+                        <option value="en">Английский язык</option>
+                        <option value="ru" selected>Русский</option>
+                    </select>
+                </div>
+            HTML;
+        }
+    }
+
+    function link_with_icone($title, $href, $class, $iconeName, $hType, $is_lang_ru = false) {
         $active = '';
-        if(strcmp($_SERVER["REQUEST_URI"], $href) === 0){
+        if($is_lang_ru){
+            $active = 'active';
+        } else if(strcmp(utf8_encode($_SERVER["REQUEST_URI"]), $href) === 0){
             $active = 'active';
         }
         return <<<HTML
@@ -70,6 +110,8 @@
         $headerTools = 'Frameworks / Langages de programmation';
         if(strcmp($lang, "en") === 0){
             $headerTools = 'Frameworks / Programming Languages';
+        } else if(strcmp($lang, "ru") === 0){
+            $headerTools = 'Фреймворки / Языки программирования';
         }
         $nbTools = count($tools);
         $listTools = '';

@@ -26,13 +26,7 @@
             </aside>
             <section>
                 <h2 hidden>Expériences</h2>
-                <div class="language-container">
-                    <img class="icone icone-langue" src="assets/images/language.svg" alt="Icone">
-                    <select name="langue" id="langue" property="schema:knowsLanguage">
-                        <option value="fr">French</option>
-                        <option value="en" selected>English</option>
-                    </select>
-                </div>
+                <?= language_view('en') ?>
                 <?php
                     foreach($formations as $key => $value) {
                         echo education_view($value["school"], $value["logo"], $value["formation"], $value["interval"]);

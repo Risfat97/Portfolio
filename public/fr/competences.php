@@ -24,13 +24,7 @@
                 ?>
             </aside>
             <section>
-                <div class="language-container">
-                    <img class="icone icone-langue" src="assets/images/language.svg" alt="Icone">
-                    <select name="langue" id="langue" property="schema:knowsLanguage">
-                        <option value="fr" selected>Français</option>
-                        <option value="en">Anglais</option>
-                    </select>
-                </div>
+                <?= language_view() ?>
                 <p class="bref-desc">
                     <span property="foaf:firstName">Tafsir</span> est passionné par les nouvelles technologies et est souvent entrain 
                     d'apprendre un nouveau langage / framework ou un nouveau outil.

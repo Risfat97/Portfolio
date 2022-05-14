@@ -22,13 +22,7 @@
                 ?>
             </aside>
             <section>
-                <div class="language-container">
-                    <img class="icone icone-langue" src="assets/images/language.svg" alt="Icone">
-                    <select name="langue" id="langue" property="schema:knowsLanguage">
-                        <option value="fr" selected>Français</option>
-                        <option value="en">Anglais</option>
-                    </select>
-                </div>
+                <?= language_view() ?>
                 <header class="author-container">
                     <h1 class="author" 
                         property="foaf:depicts" 

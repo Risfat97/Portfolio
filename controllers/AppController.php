@@ -7,19 +7,35 @@
         {
             $this->tabUrl = [
                 "/fr/en" => "/en",
+                "/fr/ru" => "/ru",
                 "/en/fr" => "/fr",
+                "/en/ru" => "/ru",
+                "/ru/fr" => "/fr",
+                "/ru/en" => "/en",
                 "/experiences/en" => "/experience",
+                "/experiences/ru" => "/опыт",
                 "/experience/fr" => "/experiences",
+                "/experience/ru" => "/опыт",
+                "/опыт/fr" => "/experiences",
+                "/опыт/en" => "/experience",
                 "/formations/en" => "/education",
+                "/formations/ru" => "/тренинги",
                 "/education/fr" => "/formations",
+                "/education/ru" => "/тренинги",
+                "/тренинги/fr" => "/formations",
+                "/тренинги/en" => "/education",
                 "/competences/en" => "/skills",
-                "/skills/fr" => "/competences"
+                "/competences/ru" => "/навыки",
+                "/skills/fr" => "/competences",
+                "/skills/ru" => "/навыки",
+                "/навыки/fr" => "/competences",
+                "/навыки/en" => "/skills",
             ];
         }
 
         public function action() {
             if($_SERVER["REQUEST_URI"] === '/'){
-                $languageSite = ['fr' => 'fr', 'en' => 'en'];    // This is the only languages available for the website
+                $languageSite = ['fr' => 'fr', 'en' => 'en', 'ru' => 'ru'];    // This is the only languages available for the website
                 $lang = 'fr';
                 $acceptLanguage = explode(',', $_SERVER["HTTP_ACCEPT_LANGUAGE"]);
                 array_shift($acceptLanguage);
