@@ -20,6 +20,10 @@
                         echo link_with_icone($key, $value["href"], $value["class"], $value["icone"], 'h3');
                     }
                 ?>
+                <a href="/assets/docs/cv_fr_tafsir.pdf" class="aside-link" property="foaf:Document" resource="/assets/docs/cv_fr_tafsir.pdf">
+                    <img class="icone" src="/assets/images/file_download.svg" alt="Icone">
+                    <h3>C.V</h3>
+                </a>
             </aside>
             <section>
                 <h2 hidden>Expériences</h2>

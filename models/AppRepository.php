@@ -288,19 +288,19 @@
 
         public static $educationEn = [
             "supgal" => [
-                "school" => "Sup Galilée - Université Sorbonne Paris Nord",
+                "school" => "Sup Galilée - Sorbonne Paris Nord University",
                 "logo" => "/assets/images/sup_galilee.png",
                 "formation" => "Computer engineering school",
                 "interval" => "Since september 2020",
             ],
             "instgal" => [
-                "school" => "Institut Galilée - Université Sorbonne Paris Nord",
+                "school" => "Institut Galilée - Sorbonne Paris Nord University",
                 "logo" => "/assets/images/institut_galilee.png",
                 "formation" => "Second year computer science degree",
                 "interval" => "2019 - 2020"
             ],
             "ugb" => [
-                "school" => "Université Gaston Berger, Sénégal",
+                "school" => "Gaston Berger University, Sénégal",
                 "logo" => "/assets/images/ugb.png",
                 "formation" => "Second year undergraduate degree in Maths Physics Computer Science",
                 "interval" => "2017 - 2019"

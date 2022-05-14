@@ -20,6 +20,10 @@
                         echo link_with_icone($key, $value["href"], $value["class"], $value["icone"], 'h3');
                     }
                 ?>
+                <a href="/assets/docs/cv_en_tafsir.pdf" class="aside-link" property="foaf:Document" resource="/assets/docs/cv_en_tafsir.pdf">
+                    <img class="icone" src="/assets/images/file_download.svg" alt="Icone">
+                    <h3>C.V</h3>
+                </a>
             </aside>
             <section>
                 <?= language_view('ru') ?>
@@ -89,6 +93,6 @@
                 <?= quote_view("Abraham Maslow", "Если единственный инструмент, который у вас есть, - молоток, вы склонны воспринимать любую проблему как гвоздь.") ?>
             </section>
         </main>
-        <script src="assets/js/app.js"></script>
+        <script src="/assets/js/app.js"></script>
     </body>
 </html>
