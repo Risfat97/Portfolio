@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="/public/fr/formations.xsl" type="text/xsl"?>
+<!DOCTYPE formations [
+    <!ELEMENT formations (formation+)>
+    <!ELEMENT formation (ecole,label,periode)>
+
+    <!ELEMENT ecole (nom, logo)>
+    <!ELEMENT label (#PCDATA)>
+    <!ELEMENT periode (#PCDATA)>
+
+    <!ELEMENT nom (#PCDATA)>
+
+    <!ELEMENT logo EMPTY>
+    <!ATTLIST logo link CDATA #REQUIRED>
+]>
+
+<formations>
+    <formation>
+        <ecole>
+            <nom>Sup Galilée - Université Sorbonne Paris Nord</nom>
+            <logo link="/assets/images/sup_galilee.png"/>
+        </ecole>
+        <label>Cycle d'ingénieur informatique</label>
+        <periode>Depuis septembre 2020</periode>
+    </formation>
+    <formation>
+        <ecole>
+            <nom>Institut Galilée - Université Sorbonne Paris Nord</nom>
+            <logo link="/assets/images/institut_galilee.png"/>
+        </ecole>
+        <label>Deuxième année licence informatique</label>
+        <periode>2019 - 2020</periode>
+    </formation>
+    <formation>
+        <ecole>
+            <nom>Université Gaston Berger, Sénégal</nom>
+            <logo link="/assets/images/ugb.png"/>
+        </ecole>
+        <label>Deuxième année licence Maths Physique Informatique</label>
+        <periode>2017 - 2019</periode>
+    </formation>
+</formations>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="/public/fr/experience.xsl" type="text/xsl"?>
+<!DOCTYPE experiences [
+    <!ELEMENT experiences (experience+)>
+    <!ELEMENT experience (title,logo,tools?)>
+    <!ATTLIST experience debut CDATA #REQUIRED>
+    <!ATTLIST experience fin CDATA #REQUIRED>
+
+    <!ELEMENT title (poste1,entreprise,poste2?)>
+    <!ELEMENT entreprise (#PCDATA)>
+    <!ATTLIST entreprise link CDATA #REQUIRED>
+    <!ELEMENT poste1 (#PCDATA)>
+    <!ELEMENT poste2 (#PCDATA)>
+
+    <!ELEMENT logo EMPTY>
+    <!ATTLIST logo link CDATA #REQUIRED>
+
+    <!ELEMENT tools (tool*)>
+    <!ELEMENT tool EMPTY>
+    <!ATTLIST tool name CDATA #REQUIRED>
+]>
+
+<experiences>
+    <experience debut="Septembre 2021" fin="Aujourd'hui">
+        <title>
+            <poste1>Développeur d'applications web et mobiles chez</poste1>
+            <entreprise link="https://etienne-services.fr">ÉTIENNE SERVICES</entreprise>
+        </title>
+        <logo link="/assets/images/etienne-services.jpeg"/>
+        <tools>
+            <tool name="Flutter" />
+            <tool name="Javasript"/>
+            <tool name="PHP" />
+            <tool name="SQL - Mysql" />
+            <tool name="HTML &amp; CSS" />
+        </tools>
+    </experience>
+    <experience debut="Juillet 2020" fin="Aujourd'hui">
+        <title>
+            <poste1>Co-fondateur de</poste1>
+            <entreprise link="https://jant.tech">Jant TECH</entreprise>
+            <poste2>et développeur front-end/back-end.</poste2>
+        </title>
+        <logo link="/assets/images/jant-tech.png"/>
+        <tools>
+            <tool name="Angular / Typescript" />
+            <tool name="Javasript"/>
+            <tool name="PHP" />
+            <tool name="SQL - Mysql" />
+            <tool name="HTML &amp; CSS" />
+        </tools>
+    </experience>
+    <experience debut="Novembre 2020" fin="Juillet 2021">
+        <title>
+            <poste1>Tuteur en langage C à l'</poste1>
+            <entreprise link="https://galilee.univ-paris13.fr/">Institut Galilée - Université Sorbonne Paris Nord</entreprise>
+        </title>
+        <logo link="/assets/images/logo_institut_galilee.jpeg"/>
+    </experience>
+</experiences>

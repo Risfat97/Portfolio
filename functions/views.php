@@ -1,6 +1,5 @@
 <?php
     function head_view($title){
-        $root = $_SERVER["DOCUMENT_ROOT"];
         return <<<HTML
             <head>
                 <meta charset="UTF-8">

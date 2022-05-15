@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="/public/en/skills.xsl" type="text/xsl"?>
+<!DOCTYPE skills [
+    <!ELEMENT skills (languages,technologies,tools)>
+
+    <!ELEMENT languages (language+)>
+    <!ELEMENT technologies (technologie+)>
+    <!ELEMENT tools (tool+)>
+
+    <!ELEMENT language (name, logo)>
+    <!ELEMENT technologie (name, logo)>
+    <!ELEMENT tool (name, logo)>
+
+    <!ELEMENT name (#PCDATA)>
+    <!ELEMENT logo EMPTY>
+    <!ATTLIST logo link CDATA #REQUIRED>
+]>
+
+<skills>
+    <languages>
+        <language>
+            <name>C</name>
+            <logo link="/assets/images/langage_c.png"/>
+        </language>
+        <language>
+            <name>C++</name>
+            <logo link="/assets/images/langage_cpp.png"/>
+        </language>
+        <language>
+            <name>Java</name>
+            <logo link="/assets/images/java.svg"/>
+        </language>
+        <language>
+            <name>PHP</name>
+            <logo link="/assets/images/php.svg"/>
+        </language>
+        <language>
+            <name>Javascript</name>
+            <logo link="/assets/images/javascript.svg"/>
+        </language>
+        <language>
+            <name>HTML5</name>
+            <logo link="/assets/images/html.png"/>
+        </language>
+        <language>
+            <name>CSS3</name>
+            <logo link="/assets/images/css.svg"/>
+        </language>
+        <language>
+            <name>SQL</name>
+            <logo link="/assets/images/sql.svg"/>
+        </language>
+        <language>
+            <name>Python</name>
+            <logo link="/assets/images/python.png"/>
+        </language>
+        <language>
+            <name>Prolog</name>
+            <logo link="/assets/images/swi-prolog.png"/>
+        </language>
+        <language>
+            <name>Ocaml</name>
+            <logo link="/assets/images/ocaml.png"/>
+        </language>
+    </languages>
+    <technologies>
+        <technologie>
+            <name>Flutter</name>
+            <logo link="/assets/images/flutter.jpeg"/>
+        </technologie>
+        <technologie>
+            <name>NodeJS</name>
+            <logo link="/assets/images/nodejs.png"/>
+        </technologie>
+        <technologie>
+            <name>Angular</name>
+            <logo link="/assets/images/angular.png"/>
+        </technologie>
+        <technologie>
+            <name>React</name>
+            <logo link="/assets/images/react.svg"/>
+        </technologie>
+        <technologie>
+            <name>Symfony</name>
+            <logo link="/assets/images/symfony.svg"/>
+        </technologie>
+        <technologie>
+            <name>MySQL</name>
+            <logo link="/assets/images/mysql.png"/>
+        </technologie>
+        <technologie>
+            <name>Matlab</name>
+            <logo link="/assets/images/matlab.png"/>
+        </technologie>
+    </technologies>
+    <tools>
+        <tool>
+            <name>Git</name>
+            <logo link="/assets/images/git.png"/>
+        </tool>
+        <tool>
+            <name>Linux</name>
+            <logo link="/assets/images/linux.png"/>
+        </tool>
+        <tool>
+            <name>Visual Studio Code</name>
+            <logo link="/assets/images/vscode.png"/>
+        </tool>
+    </tools>
+</skills>

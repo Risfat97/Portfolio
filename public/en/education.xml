@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="/public/en/education.xsl" type="text/xsl"?>
+<!DOCTYPE educations [
+    <!ELEMENT educations (education+)>
+    <!ELEMENT education (school,label,period)>
+
+    <!ELEMENT school (name, logo)>
+    <!ELEMENT label (#PCDATA)>
+    <!ELEMENT period (#PCDATA)>
+
+    <!ELEMENT name (#PCDATA)>
+
+    <!ELEMENT logo EMPTY>
+    <!ATTLIST logo link CDATA #REQUIRED>
+]>
+
+<educations>
+    <education>
+        <school>
+            <name>Sup Galilée - Sorbonne Paris Nord University</name>
+            <logo link="/assets/images/sup_galilee.png"/>
+        </school>
+        <label>Computer engineering school</label>
+        <period>Since september 2020</period>
+    </education>
+    <education>
+        <school>
+            <name>Institut Galilée - Sorbonne Paris Nord University</name>
+            <logo link="/assets/images/institut_galilee.png"/>
+        </school>
+        <label>Second year computer science degree</label>
+        <period>2019 - 2020</period>
+    </education>
+    <education>
+        <school>
+            <name>Gaston Berger University, Sénégal</name>
+            <logo link="/assets/images/ugb.png"/>
+        </school>
+        <label>Second year undergraduate degree in Maths Physics Computer Science</label>
+        <period>2017 - 2019</period>
+    </education>
+</educations>
